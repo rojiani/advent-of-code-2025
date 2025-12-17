@@ -4,6 +4,7 @@ internal typealias Joltage = Int
 
 internal typealias Battery = List<Joltage>
 
+/** https://adventofcode.com/2025/day/3 */
 class Day03 {
 
   class Part1 {

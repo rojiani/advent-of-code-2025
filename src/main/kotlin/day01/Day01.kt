@@ -2,6 +2,7 @@ package day01
 
 import kotlin.math.abs
 
+/** https://adventofcode.com/2025/day/1 */
 class Day01 {
 
   class Part1 {

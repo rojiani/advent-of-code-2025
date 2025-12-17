@@ -2,6 +2,7 @@ package day02
 
 import java.math.BigInteger
 
+/** https://adventofcode.com/2025/day/2 */
 class Day02 {
 
   class Part1 {
@@ -9,7 +10,8 @@ class Day02 {
       val ranges: List<LongRange> = parseInput(input)
 
       val invalidIds = ranges.flatMap { range -> findInvalidIds(range) }
-      return sumIds(invalidIds)   }
+      return sumIds(invalidIds)
+    }
 
     private fun findInvalidIds(range: LongRange): List<Long> =
       range.filter { id -> isInvalidId(id) }
