@@ -23,17 +23,17 @@ class Day02Test {
     part1.solve(input).shouldBe(37314786486.toBigInteger())
   }
 
-    @Test
-    fun `part 2 sample input`() {
-      val input = readInputText("day02-sample.txt")
-      part2.solve(input).shouldBe(4174379265.toBigInteger())
-    }
+  @Test
+  fun `part 2 sample input`() {
+    val input = readInputText("day02-sample.txt")
+    part2.solve(input).shouldBe(4174379265.toBigInteger())
+  }
 
-    @Test
-    fun `part 2 input`() {
-      val input = readInputText("day02-input.txt")
-      part2.solve(input).shouldBe(0)
-    }
+  @Test
+  fun `part 2 input`() {
+    val input = readInputText("day02-input.txt")
+    part2.solve(input).shouldBe(0)
+  }
 }
 
 class SampleInputIndividualRangeTest :
