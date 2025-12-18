@@ -2,7 +2,6 @@ package day08
 
 import common.readInputText
 import io.kotest.matchers.shouldBe
-import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
 class Day08Test {
@@ -21,17 +20,15 @@ class Day08Test {
     part1.solve(input, distancesToProcess = 1000).shouldBe(330786L)
   }
 
-  @Disabled("TODO")
   @Test
   fun `part 2 sample input`() {
     val input = readInputText("day08-sample.txt")
-    part2.solve(input).shouldBe(0L)
+    part2.solve(input).shouldBe(25272L)
   }
 
-  @Disabled("TODO")
   @Test
   fun `part 2 input`() {
     val input = readInputText("day08-input.txt")
-    part2.solve(input).shouldBe(0L)
+    part2.solve(input).shouldBe(3276581616L)
   }
 }
