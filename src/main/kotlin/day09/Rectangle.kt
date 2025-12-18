@@ -22,7 +22,7 @@ data class Rectangle(val p1: Point2D, val p2: Point2D) {
   val area: Long = width.toLong() * height.toLong()
 
   override fun toString(): String = "Rectangle($p1, $p2, area = $area)"
-  
+
   // Overridden so that R(p1, p2) == R(p2, p1)
   override fun equals(other: Any?): Boolean {
     if (this === other) return true

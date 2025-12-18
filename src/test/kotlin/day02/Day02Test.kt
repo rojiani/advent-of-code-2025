@@ -1,10 +1,7 @@
 package day02
 
 import common.readInputText
-import io.kotest.core.spec.style.FunSpec
-import io.kotest.datatest.withData
 import io.kotest.matchers.shouldBe
-import java.math.BigInteger
 import kotlin.test.Test
 
 class Day02Test {
