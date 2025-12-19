@@ -21,8 +21,9 @@ val ojAlgoVersion = "56.1.1"
 
 dependencies {
     implementation("org.ojalgo:ojalgo:$ojAlgoVersion")
-    testImplementation(platform("org.junit:junit-bom:$junitVersion"))
+
     testRuntimeOnly("org.junit.jupiter:junit-jupiter:$junitVersion")
+    testImplementation(platform("org.junit:junit-bom:$junitVersion"))
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testImplementation("io.kotest:kotest-assertions-shared:$kotestVersion")
     testImplementation("io.kotest:kotest-assertions-core:$kotestVersion")
