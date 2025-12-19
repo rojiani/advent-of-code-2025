@@ -11,16 +11,20 @@ version = "1.0-SNAPSHOT"
 repositories {
     google()
     mavenCentral()
-    maven("https://plugins.gradle.org/m2/")
+    gradlePluginPortal()
 }
 
 val kotestVersion = "6.0.0.M1"
+val multikVersion = "0.2.3"
+val junitVersion = "6.1.0-M1"
+val ojAlgoVersion = "56.1.1"
 
 dependencies {
-    implementation("com.google.guava:guava:33.5.0-jre")
-    testImplementation(kotlin("test"))
-    testImplementation(platform("org.junit:junit-bom:6.1.0-M1"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+    implementation("org.ojalgo:ojalgo:$ojAlgoVersion")
+    testImplementation(platform("org.junit:junit-bom:$junitVersion"))
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter:$junitVersion")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
+    testImplementation("io.kotest:kotest-assertions-shared:$kotestVersion")
     testImplementation("io.kotest:kotest-assertions-core:$kotestVersion")
     testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
     testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")
@@ -35,4 +39,3 @@ tasks.test {
 }
 
 spotless { kotlin { ktfmt("0.59").googleStyle() } }
-

@@ -2,7 +2,7 @@ package day06
 
 import common.readInputText
 import io.kotest.matchers.shouldBe
-import kotlin.test.Test
+import org.junit.jupiter.api.Test
 
 class Day06Test {
   private val part1 = Day06.Part1()
