@@ -1,3 +1,6 @@
+# Don't check in problem inputs
+src/main/resources/inputs/*input.txt
+
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
